@@ -18,28 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Jd2-Ai-Hq2">
-                                <rect key="frame" x="150" y="20" width="300" height="197"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8H-7i-SbY" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q2J-PB-lq1">
-                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-ko-0J1">
-                                        <rect key="frame" x="73" y="58" width="454" height="295"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-ko-0J1">
+                                        <rect key="frame" x="0.0" y="58" width="600" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q2J-PB-lq1">
+                                        <rect key="frame" x="0.0" y="10" width="600" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -53,10 +50,13 @@
                                     <constraint firstItem="ylR-ko-0J1" firstAttribute="centerX" secondItem="q8H-7i-SbY" secondAttribute="centerX" id="lyC-Wc-Mks"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Jd2-Ai-Hq2">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Jd2-Ai-Hq2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="3Km-bY-ChD"/>
+                            <constraint firstItem="Jd2-Ai-Hq2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="3Km-bY-ChD"/>
                             <constraint firstItem="q8H-7i-SbY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E10-x8-iQy"/>
                             <constraint firstAttribute="trailing" secondItem="q8H-7i-SbY" secondAttribute="trailing" id="Ob4-Ba-ISC"/>
                             <constraint firstItem="q8H-7i-SbY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="V1Y-hK-Xbp"/>
@@ -65,7 +65,7 @@
                             <constraint firstItem="q8H-7i-SbY" firstAttribute="top" secondItem="Jd2-Ai-Hq2" secondAttribute="bottom" constant="20" id="gJO-UX-ePZ"/>
                             <constraint firstItem="q8H-7i-SbY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hh5-Ac-K1m"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q8H-7i-SbY" secondAttribute="bottom" id="m3T-w0-63q"/>
-                            <constraint firstAttribute="centerX" secondItem="Jd2-Ai-Hq2" secondAttribute="centerX" id="nQA-ZW-1sI"/>
+                            <constraint firstItem="Jd2-Ai-Hq2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQA-ZW-1sI"/>
                             <constraint firstItem="Jd2-Ai-Hq2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="qS3-e3-rwW"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" secondItem="Jd2-Ai-Hq2" secondAttribute="height" multiplier="2.5" id="qv0-8y-IqX"/>
                         </constraints>
